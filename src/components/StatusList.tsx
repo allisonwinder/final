@@ -3,16 +3,16 @@ import { Link, useParams } from "react-router-dom";
 import LoadingIndicator from "./LoadingIndicator";
 import "./EventsList.css";
 
-export default function CategoryList() {
-  const { category } = useParams();
+export default function StatusList() {
+  const { status } = useParams();
   const [events, setEvent] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/events?category=${category}`)
+    fetch(`http://localhost:3001/events?eventStatus=${status}`)
       .then((response) => response.json())
       .then((data) => setEvent(data))
       .catch((error) => console.error("Error fetching data:", error));
-  }, [category]);
+  }, [status]);
 
   if (!events) {
     return <LoadingIndicator />;

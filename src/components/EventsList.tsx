@@ -39,9 +39,24 @@ export default function EventsList() {
           Other
         </Link>
       </div>
+      <div className="linked_categories brand">
+        <Link to="status/Complete" className="inner Complete btn">
+          Complete
+        </Link>
+        <Link to="category/In-Progress" className="inner btn In-Progress">
+          In Progress
+        </Link>
+        <Link to="category/Not-Started" className="inner btn Not-Started">
+          Not Started
+        </Link>
+      </div>
       <div className="recipe-container">
         {events.map((event) => (
-          <Link className="recipe-card" to={`${event.id}`} key={event.id}>
+          <Link
+            className={`recipe-card ${event.eventStatus}`}
+            to={`${event.id}`}
+            key={event.id}
+          >
             <div className="recipe-content">
               <h5 className="rec-title brand">{event.eventName}</h5>
               <p className="card-info">
@@ -50,6 +65,7 @@ export default function EventsList() {
               <p className="card-info">
                 <strong>Category:</strong> {event.category}
               </p>
+              {}
             </div>
           </Link>
         ))}

@@ -74,14 +74,6 @@ export default function AddEvemt() {
     }));
   };
 
-  /*   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setNewEvent((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  }; */
-
   return (
     <>
       <div className="form-container brand">
@@ -155,10 +147,10 @@ export default function AddEvemt() {
               <option value="Complete" className="brand">
                 Complete
               </option>
-              <option value="In Progress" className="brand">
+              <option value="In-Progress" className="brand">
                 In Progress
               </option>
-              <option value="Not Started" className="brand">
+              <option value="Not-Started" className="brand">
                 Not Started
               </option>
             </select>

@@ -6,6 +6,7 @@ import AddEvent from "./AddEvent";
 import EventsList from "./EventsList";
 import EventView from "./EventView";
 import CategoryList from "./CategoryList";
+import StatusList from "./StatusList";
 
 export default function Body() {
   const { pathname } = useLocation();
@@ -27,8 +28,13 @@ export default function Body() {
                 <Route path="/addEvent" element={<AddEvent />} />
                 <Route path="/events" element={<EventsList />} />
                 <Route path="/events/:id" element={<EventView />} />
+                <Route path="/events/status/:status" element={<StatusList />} />
                 <Route
-                  path="/evebts/category/:category"
+                  path="/events/status/:status/:id"
+                  element={<EventView />}
+                />
+                <Route
+                  path="/events/category/:category"
                   element={<CategoryList />}
                 />
                 <Route

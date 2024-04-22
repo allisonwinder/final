@@ -28,7 +28,15 @@
 
 .recipe-card:hover {
   transform: scale(1.05); /* Scale up the card slightly on hover */
-  background-color: #e0e0e0; /* Change background color on hover */
+  background-color: #ccc; /* Change background color on hover */
+}
+
+.Complete {
+  background-color: #e0e0e0;
+}
+
+.In-Progress {
+  background-color: #a0e7bd;
 }
 
 .img-center {

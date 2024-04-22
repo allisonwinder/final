@@ -4,7 +4,7 @@
       "id": "123b",
       "eventName": "grade",
       "category": "Work",
-      "eventStatus": "incomplete",
+      "eventStatus": "In-Progress",
       "dueDate": "4/29/24",
       "description": "grade IS 413 final exams",
       "notification": "4/26/24"
