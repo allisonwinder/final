@@ -1,0 +1,104 @@
+.single-recipe-card {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fbede6;
+}
+
+.recipe-title {
+  text-align: center;
+  font-size: 250%;
+}
+
+.photo-size {
+  padding: 1em;
+  position: relative;
+  height: 100%;
+  max-width: 80%;
+}
+
+.image-center {
+  display: flex;
+  justify-content: center;
+}
+
+.instructions-card {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.prepTime {
+  flex: 0 0 calc(25%);
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.cookTime {
+  flex: 0 0 calc(25%);
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.totalTime {
+  flex: 0 0 calc(25%);
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.instructions {
+  padding-left: 1em;
+  font-size: 150%;
+}
+
+.ingredients {
+  padding-left: 1em;
+  font-size: 120%;
+}
+
+@media screen and (max-width: 44rem) {
+  .prepTime {
+    margin: auto;
+  }
+  .cookTime {
+    margin: auto;
+  }
+  .totalTime {
+    margin: auto;
+  }
+  .instructions {
+    font-size: 100%;
+  }
+
+  .ingredients {
+    padding-left: 1em;
+    font-size: 100%;
+  }
+  .recipe-title {
+    font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .prepTime {
+    margin: 2px;
+  }
+  .cookTime {
+    margin: 2px;
+  }
+  .totalTime {
+    margin: 2px;
+  }
+}

@@ -1,0 +1,70 @@
+nav {
+  grid-area: nav;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #d4f6f2;
+  outline: solid grey 1px;
+  z-index: 3;
+}
+
+nav .buttonWrapper {
+  justify-content: center;
+  padding: 1em;
+}
+
+/* this came from ChaptGPT */
+.btn {
+  padding: 0.5em; /* Padding inside the buttons */
+  margin: 0.5em; /* Margin between buttons */
+  height: 2em;
+  width: 80%; /* Allow buttons to adjust width according to content */
+  background-color: #fbede6;
+  border: 1px solid grey; /* Add border */
+  text-decoration: none; /* Remove default link underline */
+  display: inline-block;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 5px;
+  color: black; /* Button text color */
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #ffe0cc; /* Change background color on hover */
+}
+
+.btn:focus {
+  outline: none; /* Remove focus outline */
+}
+
+@media screen and (max-width: 44rem) {
+  .buttonWrapper {
+    display: flex; /* Enable flexbox layout for buttonWrapper */
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    align-items: center; /* Center-align items vertically */
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .btn {
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .btn {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 10rem) {
+  .btn {
+    font-size: x-small;
+  }
+}

@@ -1,0 +1,42 @@
+.crumbs {
+  grid-area: crumbs;
+  background-color: #a0e7bd;
+  height: 100%;
+  min-height: 100%;
+  display: flex; /* Add flexbox display */
+  justify-content: left; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: left;
+  outline: solid grey 1px;
+  padding-left: 2em;
+}
+
+.transitions {
+  transition: transform 0.5s;
+}
+
+.transitions:hover {
+  transform: scale(125%);
+}
+
+.links {
+  text-decoration: none; /* Remove default link underline */
+  color: black;
+  transition: text-decoration 0.5s;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 44rem) {
+  .text-resize {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .crumbs {
+    display: none;
+  }
+}

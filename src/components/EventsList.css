@@ -1,0 +1,89 @@
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.linked_categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recipe-card {
+  flex: 0 0 calc(25%); /* Three columns with margin between cards */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fbede6;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.inner {
+  flex: 0 0 calc(25%);
+}
+
+.recipe-card:hover {
+  transform: scale(1.05); /* Scale up the card slightly on hover */
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.img-center {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-size {
+  padding: 1em;
+  position: relative;
+  height: 100%;
+  max-width: 80%;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+.rec-title {
+  text-align: center;
+  font-size: large;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-info {
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+  text-align: center;
+}
+
+.subcategory {
+  font-size: x-small;
+  margin-block-start: 0em;
+}
+
+@media (max-width: 768px) {
+  .recipe-card {
+    flex: 0 0 calc(33%); /* Two columns on smaller screens */
+  }
+
+  .inner {
+    flex: 0 0 calc(33%);
+  }
+}
+@media screen and (max-width: 32rem) {
+  .recipe-card {
+    flex: 0 0 calc(93%); /* Two columns on smaller screens */
+  }
+
+  .inner {
+    flex: 0 0 calc(93%);
+  }
+}

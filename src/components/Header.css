@@ -1,0 +1,64 @@
+header {
+  background-color: #d4f6f2;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  outline: solid grey 1px;
+}
+
+.centerhead {
+  flex: 1 1 70%;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 2em;
+}
+
+.title {
+  display: block;
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.imageSize {
+  flex: 0 0 auto;
+  max-width: 100%;
+  padding-left: 30%;
+  height: 100%;
+}
+
+@media screen and (max-width: 44rem) {
+  header .centerhead {
+    align-items: center;
+  }
+
+  .title {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .imageSize {
+    padding-left: 20%;
+  }
+
+  .title {
+    font-size: smaller;
+  }
+  .centerhead {
+    padding-left: 1em;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  .title {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 10rem) {
+  .title {
+    font-size: xx-small;
+  }
+}

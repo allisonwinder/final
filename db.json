@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "id": "123b",
+      "eventName": "grade",
+      "category": "Work",
+      "eventStatus": "incomplete",
+      "dueDate": "4/29/24",
+      "description": "grade IS 413 final exams",
+      "notification": "4/26/24"
+    },
+    {
+      "id": "71b2",
+      "eventName": "Run",
+      "category": "Exercise",
+      "eventStatus": "Complete",
+      "dueDate": "4/22/24",
+      "description": "I need to run for 38 minutes this morning",
+      "notification": "4/22/24"
+    }
+  ]
+}

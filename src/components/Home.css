@@ -1,0 +1,39 @@
+.allison {
+  flex: 0 0 auto;
+  padding: 1em;
+  position: relative;
+  height: 100%; /* set to anything and aspect ratio is maintained */
+  max-width: 30%;
+}
+
+.pagetitle {
+  width: 100%;
+  text-align: center;
+  font-size: 200%;
+}
+
+.content {
+  display: flex;
+}
+
+.thoughts {
+  flex: 1 1 70%;
+}
+
+.loading {
+  text-align: center;
+}
+
+@media screen and (max-width: 32rem) {
+  .content {
+    display: block;
+    justify-content: center;
+  }
+
+  .allison {
+    padding-left: 10%;
+    position: relative;
+    height: 100%;
+    max-width: 80%;
+  }
+}
